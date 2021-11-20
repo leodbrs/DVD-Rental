@@ -1,7 +1,7 @@
 import csv
 import psycopg2
 
-con = psycopg2.connect(database="rt1projet18", user="rt1projet18", password="7hGJox", host="srv-prj-new.iut-acy.local", port="5432")
+con = psycopg2.connect(database="rt1projet18", user="root", password="root", host="192.168.91.135", port="5432")
 
 cur = con.cursor()
 
