@@ -22,20 +22,20 @@ CREATE TABLE Genre (
     IdGenre SERIAL UNIQUE PRIMARY KEY NOT NULL,
     nomGenre VARCHAR(50) NOT NULL
 );
-CREATE TABLE Personne (
-    IdPersonne SERIAL UNIQUE PRIMARY KEY NOT NULL,
-    nomPersonne VARCHAR(50) NOT NULL,
-    prenomPersonne VARCHAR(50) NOT NULL,
-    sexe CHAR(1),
-    dateNaissance DATE NOT NULL
-);
+-- CREATE TABLE Personne (
+--     IdPersonne SERIAL UNIQUE PRIMARY KEY NOT NULL,
+--     nomPersonne VARCHAR(50) NOT NULL,
+--     prenomPersonne VARCHAR(50) NOT NULL,
+--     sexe CHAR(1),
+--     dateNaissance DATE NOT NULL
+-- );
 CREATE TABLE Client (
     IdClient SERIAL UNIQUE PRIMARY KEY NOT NULL,
     nomClient VARCHAR(50) NOT NULL,
     prenomClient VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL,
     dateNaissance DATE NOT NULL,
-    genre CHAR(1),
+    genre CHAR(5),
     nomUtilisateur VARCHAR(50) NOT NULL,
     motDePasse CHAR(32) NOT NULL,
     RefVille INTEGER NOT NULL REFERENCES Ville ON UPDATE CASCADE ON DELETE SET NULL
