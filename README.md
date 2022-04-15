@@ -5,7 +5,7 @@
 
 ---
 
-# InfraDevOps
+# DVD Rental
 
 Online DVD sales website (First year project of DUT Networks and Telecommunication, Université Savoie Mont Blanc)
 
